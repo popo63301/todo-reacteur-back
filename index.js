@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 mongoose.connect(
   'mongodb://admin:reacteur123@ds155823.mlab.com:55823/todo-reacteur-db',
@@ -23,7 +24,8 @@ const TodoModel = mongoose.model('Todo', {
 // firstTodo.save();
 
 const app = express();
-
+app.use(cors());
+app.options('*', cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // parse application/json
