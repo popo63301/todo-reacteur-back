@@ -1,0 +1,24 @@
+{
+  "name": "todo-reacteur-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "anne": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/popo63301/todo-reacteur-back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/popo63301/todo-reacteur-back/issues"
+  },
+  "homepage": "https://github.com/popo63301/todo-reacteur-back#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
