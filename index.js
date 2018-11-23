@@ -62,7 +62,11 @@ app.post('/createTodo', function(req, res) {
 });
 
 app.delete('/deleteTodo', function(req, res) {
-  res.send('delete todo');
+  const todoId = req.body.id;
+
+  TodoModel.deleteOne({ _id: todoId }, function(err) {
+    res.send('OK');
+  });
 });
 
 app.listen(3000, function() {
