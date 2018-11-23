@@ -38,7 +38,11 @@ app.get('/', function(req, res) {
 // });
 
 app.get('/getTodos', function(req, res) {
-  res.send('all todos');
+  TodoModel.find(function(err, todos) {
+    if (err) return console.error(err);
+
+    res.send(todos);
+  });
 });
 
 app.post('/createTodo', function(req, res) {
