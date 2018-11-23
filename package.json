@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/popo63301/todo-reacteur-back#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.13"
   }
 }
